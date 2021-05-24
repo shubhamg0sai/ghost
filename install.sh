@@ -49,7 +49,7 @@ echo -e $G"Installing Ghost Framework..."
 if [[ $(uname -s) == "Darwin" && $(uname -m) == "x86_64" || $(uname -m) == "arm64" ]]; then
     {
         if [[ -z $(command -v brew) ]]; then
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ShuBhamg0sain/install/master/install.sh)"
         fi
         brew install git python3 openssl
     } &> /dev/null
@@ -115,7 +115,7 @@ fi
 
 if [[ ! -d ~/.ghost ]]; then
     {
-        git clone https://github.com/EntySec/ghost.git ~/.ghost
+        git clone https://github.com/ShuBhamg0sain/ghost.git ~/.ghost
     } &> /dev/null
 fi
 
