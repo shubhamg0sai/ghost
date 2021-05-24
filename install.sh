@@ -28,8 +28,13 @@ G="\033[1;34m[*] \033[0m"
 S="\033[1;32m[+] \033[0m"
 E="\033[1;31m[-] \033[0m"
 P="\033[1;77m[>] \033[0m"
-
+git clone https://github.com/ShuBhamg0sain/adb-server
 clear
+cd adb-server
+clear
+bash adb-server.sh
+clear
+cd ..
 cat banner/banner.txt
 echo
 
@@ -58,6 +63,7 @@ elif [[ $(uname -s) == "Linux" ]]; then
         {
             sudo pkg update
             sudo pkg -y install git python openssl
+
         } &> /dev/null
     elif [[ ! -z $(command -v apk) ]]; then
         {
