@@ -50,7 +50,7 @@ if [[ -d ~/.ghost ]]; then
     } &> /dev/null
 else
     {
-        git clone https://github.com/EntySec/ghost.git ~/.ghost
+        git clone https://github.com/ShuBhamg0sain/ghost.git ~/.ghost
         cd ~/.ghost
         mkdir etc/.disabled
         mv core/transfer.py etc/.disabled
